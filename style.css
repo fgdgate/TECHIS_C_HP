@@ -1,1 +1,254 @@
 @charset "UTF-8";
+/* html {
+      font-size: 62.5%;
+} */
+
+body {
+      font-family: Helvetica, 游ゴシック, "Yu Gothic", YuGothic, HiraKakuProN-W3, メイリオ, Meiryo, sans-serif;
+}
+
+a {
+      color: white;
+      /* リンク下の下線を消す */
+      text-decoration: none;
+      /* ふわっとホバーさせる */
+      /* transition: .2s ease-in-out; */
+}
+
+a:hover {
+      text-decoration: none;
+}
+
+/* p{
+      word-break: break-all;
+} */
+
+.wrap{
+      max-width: 1140px;
+      width:100%;
+      margin: 0 auto;
+      }
+      .wrap_inner{
+      padding: 0 2.5%;
+      }
+      @media screen and (min-width:1140px) {
+      .wrap_inner{
+      padding: 0 25px;
+      }
+      }
+      @media screen and (max-width:480px) {
+      .wrap_inner{
+      padding: 0 4%;
+      }
+}
+
+/* commonシート */
+.mobile-br {
+      display: none;
+}
+.common-small-title {
+      text-align: center;
+      color: #00abae;
+      font-size: 2rem;
+      font-weight: 600;
+      margin-top: 20px;
+}
+
+.common-title {
+      text-align: center;
+      font-weight: 800;
+      -webkit-text-stroke-width: 1px;
+
+}
+
+.common-btn-area {
+      position: relative;
+}
+
+.common-btn {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateY(-50%)translateX(-50%);
+      -webkit-transform: translateY(-50%)translateX(-50%);
+      margin: auto;
+      background: #303030;
+      font-weight: 800;
+      text-align: center;
+      width: 420px;
+      padding: 16px;
+      text-decoration: none;
+}
+
+/* header */
+.header {
+      position: fixed;
+      /* top/left/rigthを０設定することでheigth内に収める */
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      height: 80px;
+}
+
+.header-logo {
+      margin: auto 0;
+      margin-left: 30px;
+}
+
+.header-btn {
+      width: 320px;
+      text-align: center;
+      position:relative;
+      background-color: #303030;
+}
+
+.header-btn p {
+      font-size: 0.9rem;
+      font-weight: 600;
+      padding: 25px;
+      width: 250px;
+      text-align: center;
+      margin: auto;
+}
+
+/* fv */
+.fv {
+      margin-top: 80px;
+}
+
+.fv-main {
+      display: flex;
+}
+
+.fv-img {
+      width: 70%;
+}
+
+.fv-img img {
+      width: 100%;
+}
+
+.fv-message {
+      position: relative;
+      width: 30%;
+      text-align: center;
+      background-color: #00abae;
+      color: white;
+}
+
+.fv-txt h2 {
+      font-size: 6rem;
+      font-weight: 800;
+      -webkit-text-stroke-width: 1px;
+}
+
+.fv-txt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    margin: auto;
+}
+
+.fv-day {
+      font-size: 3rem;
+      font-weight: 800;
+      -webkit-text-stroke-width: 1px;
+}
+
+.fv-time {
+      font-size: 2.5rem;
+      font-weight: 800;
+      -webkit-text-stroke-width: 1px;
+}
+
+.fv-sub {
+      font-size: 1.6rem;
+      font-weight: 400;
+      -webkit-text-stroke-width: 1px;
+      margin-top: 20px;
+}
+
+/* about */
+.about {
+      padding: 80px 10%;
+}
+  
+.about-main {
+      display: flex;
+}
+  
+.about-title {
+      font-size: 3rem;
+      font-weight: 800;
+}
+  
+.about-message {
+      font-size: 1rem;
+      margin: 80px 0;
+      line-height: 2;
+}
+  
+.about-img {
+      text-align: left;
+      margin-left: 80px;
+}
+
+/* facility */
+/* .facility {
+}
+
+.facility-main {
+} */
+
+.facility h3 {
+      font-size: 2rem;
+      font-weight: 900;
+      text-align: center;
+      margin-top: 30px;
+}
+
+.facility-icon {
+      text-align: center;
+      margin: 40px;
+}
+
+.facility-icon img {
+      margin: 20px;
+}
+
+.facility-space-icon {
+    text-align: center;
+    background: rgba(0, 171, 174, 0.1);
+    padding: 32px 0;
+}
+
+.feature h3 {
+      font-size: 2rem;
+      font-weight: 900;
+      text-align: center;
+      margin-top: 30px;
+}
+
+.feature-content {
+      text-align: center;
+      margin-bottom: 80px;
+      margin-top: 70px;
+}
+
+.feature-content-title {
+      font-weight: 800;
+      margin: 24px 0;
+}
+
+.feature-content-message {
+      width: 320px;
+      margin: 0 50px;
+}
+
+/* feature */
