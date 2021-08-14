@@ -4,7 +4,10 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+      <!-- reset CSS -->
+      <link rel="stylesheet" href="reset.css">
       <!-- bootstrap CSS -->
       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
       <link rel="stylesheet" href="style.css">
@@ -24,7 +27,7 @@
       <div class="fv">
             <div class="fv-main">
                   <div class="fv-img">
-                        <img src="image\fv.png" alt="fv画像">
+                        <img src="image\fv.png" alt="fv画像" class="img-fluid">
                   </div>
                   <div class="fv-message">
                         <div class="fv-txt">
@@ -58,7 +61,7 @@
                               </div>
                               <div class="col-xl-5 about-res-img">
                                     <div class="about-img">
-                                          <img src="image\about.png" alt="about飾画像">
+                                          <img src="image\about.png" alt="about飾画像"  class="img-fluid">
                                     </div>
                               </div>
                         </div>
@@ -80,16 +83,16 @@
                   </div>
                   <div class="facility-content">
                         <div class="facility-icon">
-                              <img src="image\online.png" alt="">
-                              <img src="image\drink.png" alt="">
-                              <img src="image\print.png" alt="">
-                              <img src="image\room.png" alt="">
-                              <img src="image\charge.png" alt="">
-                              <img src="image\wifi.png" alt="">
-                              <img src="image\event.png" alt="">
+                              <img src="image\online.png" alt="" class="img-fluid">
+                              <img src="image\drink.png" alt="" class="img-fluid">
+                              <img src="image\print.png" alt="" class="img-fluid">
+                              <img src="image\room.png" alt="" class="img-fluid">
+                              <img src="image\charge.png" alt="" class="img-fluid">
+                              <img src="image\wifi.png" alt="" class="img-fluid">
+                              <img src="image\event.png" alt="" class="img-fluid">
                         </div>
                         <div class="facility-space-icon">
-                              <img src="image\space.png" alt="">
+                              <img src="image\space.png" alt="" class="img-fluid">
                         </div>
                   </div>
             </div>
@@ -110,17 +113,17 @@
                               <div class="container">
                                     <div class="row">
                                           <div class="col-sm-4">
-                                                <img src="image\open.png" alt="">
+                                                <img src="image\open.png" alt="" class="img-fluid">
                                                 <h4 class="feature-content-title">オープンスペース 1F</h4>
                                                 <p class="feature-content-message">来客の方や利用者の方とリラックスして打ち合わせすることができるスペースです。</p>
                                           </div>
                                           <div class="col-sm-4">
-                                                <img src="image\open2.png" alt="">
+                                                <img src="image\open2.png" alt="" class="img-fluid">
                                                 <h4 class="feature-content-title">オープンスペース 1F</h4>
                                                 <p class="feature-content-message">来客の方や利用者の方とリラックスして打ち合わせすることができるスペースです。</p>
                                           </div>
                                           <div class="col-sm-4">
-                                                <img src="image\door.png" alt="">
+                                                <img src="image\door.png" alt="" class="img-fluid">
                                                 <h4 class="feature-content-title">オープンスペース 1F</h4>
                                                 <p class="feature-content-message">来客の方や利用者の方とリラックスして打ち合わせすることができるスペースです。</p>
                                           </div>
@@ -151,10 +154,144 @@
                               お申し込みの流れ
                         </h3>
                   </div>
-
+                  <div class="flow-content">
+                        <div class="container">
+                              <div class="row">
+                                    <div class="col-sm-6">
+                                          <h4 style="text-align: center; margin-top: 72px;">月額会員</h4>
+                                          <p style="text-align: left; padding: 0 30px; line-height: 2;">
+                                                ご利用に関する案内などのため、原則店頭で対面申込みとさせていただきます。 申込みは、オンラインで行います。（株式会社メタップスペイメントが提供する「会費ペイ」というサービスを使用しています。）
+                                                <br>
+                                                まずはHPフォームからお問い合わせください。2営業日以内にお返事いたします。
+                                          </p>
+                                    </div>
+                                    <div class="col-sm-6">
+                                          <h4 style="text-align: center; margin-top: 72px;">単発利用（ドロップイン）</h4>
+                                          <p style="text-align: left; padding: 0 30px; line-height: 2;">
+                                                利用したい日にお越しください。 氏名・電話番号・利用時間をお伺いし、利用料金をお支払いいただきます。 出入りするためのカードをお渡しし、デポジットとして1,000円お預かりします。
+                                                <br>
+                                                利用が終わりましたら、カードをお返しいただき、デポジットをお返しします。
+                                          </p>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
             </div>
       </div>
+      <!-- flow -->
 
+      <!-- price -->
+      <div class="price">
+            <div class="price-main">
+                  <div class="common-title-wrapper">
+                        <p class="common-small-title">
+                              Price
+                        </p>
+                        <div>
+                              <h3 class="common-title">
+                                    料金 (税抜)
+                              </h3>
+                        </div>
+                  </div>
+                  <div class="price-img">
+                        <div class="container">
+                              <div class="row">
+                                    <div class="col-sm-12">
+                                          <div class="table-price">
+                                          <strong>料金表</strong>
+                                          <table class="table table-bordered">
+                                                <thead class="tead-dark">
+                                                      <tr>
+                                                            <!-- <th scope="col"></th> -->
+                                                            <th scope="col">月額会員</th>
+                                                            <th scope="col">単発利用(2時間以上)</th>
+                                                            <th scope="col">単発利用(2時間)</th>
+                                                      </tr>
+                                                </thead>
+                                                <tbody>
+                                                      <tr>
+                                                            <td>9,680円（税込）/月<br>
+                                                                  <small>-オンラインルーム利用可能 (予約制)</small>
+                                                            </td>
+                                                            <td rowspan="2">1,650円 (税込) /人<br>
+                                                                  <small>-オープンスペースのみ</small>
+                                                            </td>
+                                                            <td rowspan="2">550円 (税込) /人<br>
+                                                                  <small>-オープンスペースのみ</small>
+                                                            </td>
+                                                      </tr>
+                                                </tbody>
+                                          </table>
+
+                                          <div class="price-message">
+                                                <p style="font-size: 0.8rem;">※月額会員の申し込みは、入会金としてICカード１枚につき3,300円（税込）の事務手数料が発生します。</p>
+                                                <p style="font-size: 0.8rem;">※オンラインルームは、月額会員さまの利用希望が多いため、単発利用（ドロップイン）でのご利用はできません。</p>
+                                                <p style="font-size: 0.8rem;">※法人契約をご希望の方は、見学申し込みからお問い合わせください。</p>
+                                          </div>
+
+                                          <div class="table-price2">
+                                                <strong>お支払方法</strong>
+                                                      <table class="table table-bordered">
+                                                            <thead class="tead-dark">
+                                                                  <tr>
+                                                                        <!-- <th scope="col"></th> -->
+                                                                        <th scope="col">月額会員※1</th>
+                                                                        <th scope="col">単発利用</th>
+                                                                  </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                  <tr>
+                                                                        <td>クレジットカード・口座振替 (前払い)</td>
+                                                                        <td rowspan="2">現金・各種クレジット・QRコード決済など</td>
+                                                                  </tr>
+                                                            </tbody>
+                                                      </table>
+
+                                                </div>
+                                          </div>
+                                    </div>
+                              </div>
+                        </div>
+                  </div>
+                  <div class="common-btn-area">
+                        <a href="https://forms.gle/dKHLvPUtbcNNEAfR6" class="common-btn">
+                              見学・お申込みはこちらから
+                        </a>
+                  </div>
+            </div>
+      </div>
+      <!-- price -->
+
+      <!-- Map -->
+      <div class="map">
+            <div class="map-main">
+                  <div class="common-title-wrapper">
+                        <p class="common-small-title">
+                              Map
+                        </p>
+                        <h3 class="common-title">
+                              住所
+                        </h3>
+                  </div>
+                  <div class="map-message">
+                        <p>〒790-0012　<br class="mobile-br">愛媛県松山市湊町4丁目6番地12 池田ビル1階2階</p></p>
+                  </div>
+                  <div class="container">
+                        <div class="row">
+                              <div class="col-sm-12">
+                                    <img src="image\map.jpg" alt="" class="img-fluid">
+                              </div>
+                        </div>
+                  </div>
+            </div>
+      </div>
+      <!-- footer -->
+      <footer class="footer">
+            <div class="footer-main">
+                  <img src="image\footer.png" alt="" class="img-fluid">
+                  <p>COPYRIGHT©︎techis All rights reserved.</p>
+            </div>
+      </footer>
 
 </body>
 </html>

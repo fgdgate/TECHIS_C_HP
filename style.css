@@ -77,7 +77,7 @@ a:hover {
       text-align: center;
       width: 420px;
       padding: 16px;
-      text-decoration: none;
+      /* text-decoration: none; */
 }
 
 /* header */
@@ -125,7 +125,7 @@ a:hover {
 }
 
 .fv-img {
-      width: 70%;
+      width: 75%;
 }
 
 .fv-img img {
@@ -134,14 +134,14 @@ a:hover {
 
 .fv-message {
       position: relative;
-      width: 30%;
+      width: 35%;
       text-align: center;
       background-color: #00abae;
       color: white;
 }
 
 .fv-txt h2 {
-      font-size: 6rem;
+      font-size: 5rem;
       font-weight: 800;
       -webkit-text-stroke-width: 1px;
 }
@@ -156,7 +156,7 @@ a:hover {
 }
 
 .fv-day {
-      font-size: 3rem;
+      font-size: 2.5rem;
       font-weight: 800;
       -webkit-text-stroke-width: 1px;
 }
@@ -251,4 +251,100 @@ a:hover {
       margin: 0 50px;
 }
 
-/* feature */
+/* flow */
+.flow {
+      padding: 160px 0;
+}
+
+/* .flow-attention{
+      margin-top: 24px; */
+      /* font-size: 8px; */
+      /* text-align: center;
+  } */
+
+/* .flow-main {}
+
+.flow-content {}
+
+.flow-content-title {} */
+
+/* price */
+.price-img {
+      margin: 32px auto;
+      width: 56%;
+      text-align: center;
+      text-align: left;
+}
+
+.price {
+      background: rgba(0, 171, 174, 0.1);
+      padding: 24px 0;
+      padding-bottom: 80px;
+}
+
+.price-message {
+      padding-bottom: 72px;
+  }
+
+.small-text {
+      font-size: small;
+}
+
+.table-price {
+      margin-bottom: 80px;
+      margin-top: 60px;
+}
+
+.table-price2 {
+      margin-bottom: 80px;
+}
+
+.table-bordered {
+      margin-bottom: 80px;
+}
+
+.table-bordered th{
+      background: #303030;
+      color: #ffffff;
+}
+
+/* Map */
+.map {
+      padding-top: 72px;
+      text-align: center;
+}
+
+/* .map-main {
+} */
+
+.map-message {
+      text-align: center;
+      margin-top: 24px;
+}
+
+.map-message p {
+      margin-bottom: 80px;
+}
+
+.map img {
+      padding-bottom: 80px;
+}
+
+/* footer */
+footer {
+      text-align: center;
+      position: relative;
+}
+
+footer img {
+      width: 100%;
+}
+
+footer p {
+      position: absolute;
+      color: white;
+      top: 24px;
+      left: 50%;
+      transform: translateY(-50%)translateX(-50%);
+      margin: auto;
+}
