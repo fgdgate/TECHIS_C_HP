@@ -23,7 +23,11 @@ a:hover {
       word-break: break-all;
 } */
 
-.wrap{
+.mobile-br {
+      display: none;
+}
+
+/* .wrap{
       max-width: 1140px;
       width:100%;
       margin: 0 auto;
@@ -40,16 +44,13 @@ a:hover {
       .wrap_inner{
       padding: 0 4%;
       }
-}
+} */
 
 /* commonシート */
-.mobile-br {
-      display: none;
-}
 .common-small-title {
       text-align: center;
       color: #00abae;
-      font-size: 2rem;
+      font-size: 24px;
       font-weight: 600;
       margin-top: 20px;
 }
@@ -88,7 +89,7 @@ a:hover {
       left: 0;
       right: 0;
       z-index: 999;
-      width: 100%;
+      background: #ffffff;
       display: flex;
       justify-content: space-between;
       height: 80px;
@@ -102,17 +103,19 @@ a:hover {
 .header-btn {
       width: 320px;
       text-align: center;
-      position:relative;
       background-color: #303030;
+      position:relative;
 }
 
 .header-btn p {
-      font-size: 0.9rem;
-      font-weight: 600;
-      padding: 25px;
-      width: 250px;
-      text-align: center;
-      margin: auto;
+    font-weight: 600;
+    width: 250px;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    -webkit-transform: translateY(-50%) translateX(-50%);
+    margin: auto;
 }
 
 /* fv */
@@ -131,6 +134,10 @@ a:hover {
 .fv-img img {
       width: 100%;
 }
+
+.mobile-fv-img{
+      display: none;
+  }  
 
 .fv-message {
       position: relative;
@@ -162,16 +169,13 @@ a:hover {
 }
 
 .fv-time {
-      font-size: 2.5rem;
+      font-size: 2rem;
       font-weight: 800;
-      -webkit-text-stroke-width: 1px;
 }
 
 .fv-sub {
-      font-size: 1.6rem;
       font-weight: 400;
-      -webkit-text-stroke-width: 1px;
-      margin-top: 20px;
+
 }
 
 /* about */
@@ -219,7 +223,7 @@ a:hover {
 }
 
 .facility-icon img {
-      margin: 20px;
+      margin: 16px;
 }
 
 .facility-space-icon {
@@ -228,6 +232,7 @@ a:hover {
     padding: 32px 0;
 }
 
+/* feature */
 .feature h3 {
       font-size: 2rem;
       font-weight: 900;
@@ -250,6 +255,10 @@ a:hover {
       width: 320px;
       margin: 0 50px;
 }
+
+.mobile-facility-icon{
+      display: none;
+  }
 
 /* flow */
 .flow {
@@ -348,3 +357,176 @@ footer p {
       transform: translateY(-50%)translateX(-50%);
       margin: auto;
 }
+
+/* レスポンシブ対応 */
+@media screen and (min-width: 1200px) {
+      /* .about-img{
+          display: none;
+      } */
+      .mobile-facility-icon{
+            display: none;
+        }
+  }
+  
+  @media screen and (max-width: 1024px) {
+      /* header */
+      .header-logo{
+          margin: auto ;
+      }
+  
+      .header-btn{
+          display: none;
+      }
+  
+      /* fv */
+      .fv-txt h2{
+          font-size: 3rem;
+      }
+  
+      .fv-day{
+          font-size: 1rem;
+          margin: 0;
+      }
+  
+      .fv-time{
+          font-size: 1.5rem;
+          margin: 0;
+      }
+  
+      .fv-sub{
+          margin: 0;
+      }
+  
+      /* about */
+      .about{
+          padding-bottom: 0;
+      }
+      .about-res-img{
+          display: none;
+      }
+
+      .mobile-facility-icon{
+            display: none;
+        }
+  }
+  
+  @media screen and (max-width: 480px) {
+      /* common */
+      .common-btn{
+          width: 320px;
+      }
+  
+      .mobile-br{
+          display: block;
+      }
+  
+      /* fv */
+      .fv-img{
+          display: none;
+      }
+  
+      .mobile-fv-img{
+          display: block;
+          width: 50%;
+      }
+  
+      .mobile-fv-img img{
+          width: 100%;
+      }
+  
+      .fv-message{
+          width: 50%;
+      }
+  
+      .fv-txt h2{
+          font-size: 2rem;
+      }
+  
+      .fv-day{
+          font-size: 1rem;
+          margin: 0;
+      }
+  
+      .fv-time{
+          font-size: 1rem;
+          margin: 0;
+      }
+  
+      .fv-sub{
+          margin: 0;
+          font-size: 8px;
+      }
+  
+      /* about */
+      .about{
+          padding: 40px 0;
+      }
+  
+      .about-title{
+          font-size: 24px;
+      }
+  
+      .about-message{
+          margin: 40px 0;
+      }
+  
+      /* facility */
+      .facility-icon{
+          display: none;
+      }
+  
+      .mobile-facility-icon{
+          margin: 16px;
+          text-align: center;
+          display: block;
+      }
+
+      /* feature */
+      .feature-content-message {
+            margin: 0 20px 40px;
+            text-align: left;
+      }
+  
+      /* flow */
+      .flow{
+          padding: 80px 0;
+      }
+  
+      /* price */
+      .price{
+          margin-bottom: 72px;
+      }
+  
+      .price-img{
+          width: 100%;
+      }
+  
+      /* map */
+      .map{
+          padding-top: 0;
+      }
+  
+      .map img{
+          padding-bottom: 44px;
+      }
+  
+      .map-message p{
+          margin-bottom: 44px;
+      }
+  
+      .table-price{
+          margin-bottom: 72px;
+      }
+  
+  }
+  
+  @media screen and (max-width: 320px) {
+      
+      .common-btn {
+          width: 280px;
+      }
+      
+      .about-title{
+          font-size: 22px;
+      }
+  }
