@@ -252,8 +252,8 @@ a:hover {
 }
 
 .feature-content-message {
-      width: 320px;
-      margin: 0 50px;
+      /* width: 320px; */
+      margin: 0 auto;
 }
 
 .mobile-facility-icon{
