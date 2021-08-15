@@ -1,3 +1,3 @@
 <?php
-include_once("techis.php");
+include_once("techis.html");
 ?>
